@@ -1,6 +1,8 @@
 import videos from '../data/videos.json'
+import { usePostHog } from '@posthog/react'
 
 export function FavoritesTab({ favorites, onSelect, onClose }) {
+  const posthog = usePostHog()
   const saved = videos.filter((v) => favorites.has(v.id))
 
   return (
@@ -35,7 +37,10 @@ export function FavoritesTab({ favorites, onSelect, onClose }) {
             {saved.map((video) => (
               <button
                 key={video.id}
-                onClick={() => onSelect(video.id)}
+                onClick={() => {
+                  posthog?.capture('favorite_selected', { video_id: video.id, category: video.category })
+                  onSelect(video.id)
+                }}
                 className="relative aspect-video rounded-lg overflow-hidden group active:scale-[0.97] transition-transform"
               >
                 <img

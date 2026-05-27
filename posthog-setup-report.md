@@ -1,12 +1,14 @@
 # PostHog post-wizard report
 
-The wizard has completed a deep integration of PostHog analytics into Calm Scroll. PostHog (`posthog-js` + `@posthog/react`) was installed and initialized in `main.jsx` with a `PostHogProvider` wrapping the entire app. Event captures were added to 6 files covering video engagement, content discovery, favorites, and auth flows. User identification (via `posthog.identify`) fires on every auth state change in `auth-context.jsx`, and `posthog.reset()` fires on sign-out. Exception capture was added to auth error paths. The existing Plausible integration in `analytics.js` was left intact — PostHog events run alongside it.
+The wizard has completed a deep integration of PostHog analytics into Calm Scroll. PostHog (`posthog-js` + `@posthog/react`) is installed and initialized in `main.jsx` with a `PostHogProvider` wrapping the entire app. Event captures cover video engagement, content discovery, favorites, and auth flows. User identification (`posthog.identify`) fires on every auth state change in `auth-context.jsx`, and `posthog.reset()` fires on sign-out. Exception capture covers auth error paths. Two new events were added in this session: `favorite_selected` (navigation from favorites panel) and `video_error` (YouTube player failures for content health monitoring). Environment variables `VITE_POSTHOG_TOKEN` and `VITE_POSTHOG_HOST` are set in `.env.local`.
 
 | Event | Description | File |
 |-------|-------------|------|
 | `video_view` | Video visible for 2+ seconds; includes `video_id`, `category`, `title` | `src/components/video-card.jsx` |
+| `video_error` | YouTube player failed to load; includes `video_id`, `category`, `error_message` ✨ | `src/components/video-card.jsx` |
 | `favorite_toggle` | Heart button tapped to add or remove a video; includes `video_id`, `action`, `category` | `src/components/video-card.jsx` |
 | `unmute` | User unmutes audio; includes `video_id`, `category` | `src/components/video-card.jsx` |
+| `favorite_selected` | User taps a video in the favorites panel to navigate to it ✨ | `src/components/favorites-tab.jsx` |
 | `category_switch` | Category pill tapped to filter the feed; includes `category` | `src/App.jsx` |
 | `favorites_opened` | Saved-videos overlay opened; includes `favorite_count` | `src/App.jsx` |
 | `profile_opened` | Logged-in user opens their profile | `src/App.jsx` |
@@ -21,12 +23,12 @@ The wizard has completed a deep integration of PostHog analytics into Calm Scrol
 
 We've built some insights and a dashboard for you to keep an eye on user behavior, based on the events we just instrumented:
 
-- [Analytics basics dashboard](/dashboard/1635748)
-- [Video views over time](/insights/vJ8zTtsL) — daily trend of `video_view` events
-- [Category popularity](/insights/IrC4OE3c) — `video_view` broken down by content category
-- [Guest to sign-up funnel](/insights/sX855RKS) — conversion from `auth_modal_opened` → `sign_up`
-- [Favorites added over time](/insights/btyUm0Uh) — daily trend of favorite add actions
-- [Audio unmute rate](/insights/T6GHi8Ve) — `unmute / video_view * 100` as an engagement depth signal
+- [Analytics basics dashboard](/project/442809/dashboard/1635844)
+- [Video views by category](/project/442809/insights/lxfdPFna) — daily `video_view` events broken down by content category
+- [Sign-up conversion funnel](/project/442809/insights/DejlPFGb) — conversion from `auth_modal_opened` → `sign_up`
+- [Daily active users](/project/442809/insights/aQ6fXm74) — unique users per day who watched at least one video
+- [Favorites added over time](/project/442809/insights/4u9sPchY) — daily count of videos added to favorites
+- [Video errors](/project/442809/insights/iN22Uy7Q) — YouTube player errors broken down by video ID for content health
 
 ### Agent skill
 

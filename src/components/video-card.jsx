@@ -29,6 +29,13 @@ export function VideoCard({ video, isFavorite, onToggleFavorite, isFirst, isMute
 
   const thumbnailUrl = `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`
   const viewTracked = useRef(false)
+  const errorTracked = useRef(false)
+
+  useEffect(() => {
+    if (!error || errorTracked.current) return
+    errorTracked.current = true
+    posthog?.capture('video_error', { video_id: video.id, category: video.category, error_message: error })
+  }, [error, video.id, video.category, posthog])
 
   // Track video_view after 2 seconds of continuous visibility
   useEffect(() => {
