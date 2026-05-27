@@ -1,11 +1,12 @@
 const CATEGORIES = [
   { key: 'all', label: 'All' },
   { key: 'ambient', label: 'Ambient' },
-  { key: 'wisdom', label: 'Wisdom' },
+  { key: 'classes', label: 'Classes' },
   { key: 'guided', label: 'Guided' },
   { key: 'satisfying', label: 'Satisfying' },
   { key: 'filmcamera', label: 'Film Camera' },
   { key: 'surfing', label: 'Surfing' },
+  { key: 'solotrip', label: 'Solo Trip' },
 ]
 
 export function CategoryBar({ selected, onSelect, onOpenFavorites, favoriteCount, onOpenProfile, user }) {

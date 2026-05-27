@@ -11,6 +11,7 @@ const ERROR_MESSAGES = {
 }
 
 const STALL_TIMEOUT = 15000
+const DEFAULT_VOLUME = 40
 
 export function useYouTubePlayer(playerDivId, youtubeId, isVisible, isMuted) {
   const playerRef = useRef(null)
@@ -50,9 +51,10 @@ export function useYouTubePlayer(playerDivId, youtubeId, isVisible, isMuted) {
             fs: 0,
           },
           events: {
-            onReady: () => {
+            onReady: (e) => {
               if (!destroyed) {
                 clearTimeout(stallTimer)
+                e.target.setVolume(DEFAULT_VOLUME)
                 setReady(true)
               }
             },
@@ -109,7 +111,7 @@ export function useYouTubePlayer(playerDivId, youtubeId, isVisible, isMuted) {
         player.mute()
       } else {
         player.unMute()
-        player.setVolume(100)
+        player.setVolume(DEFAULT_VOLUME)
       }
     } catch {
       // Ignore if player not ready

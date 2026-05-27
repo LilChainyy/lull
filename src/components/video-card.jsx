@@ -5,11 +5,12 @@ import { trackEvent, trackVideoView } from '../utils/analytics'
 
 const CATEGORY_LABELS = {
   ambient: 'Ambient',
-  wisdom: 'Wisdom',
+  classes: 'Classes',
   guided: 'Guided',
   satisfying: 'Satisfying',
   filmcamera: 'Film Camera',
   surfing: 'Surfing',
+  solotrip: 'Solo Trip',
 }
 
 const UNMUTE_HINT_KEY = 'calm-scroll-unmute-hint-dismissed'
@@ -92,11 +93,14 @@ export function VideoCard({ video, isFavorite, onToggleFavorite, isFirst, isMute
       {/* YT player container — hidden when error */}
       {!error && (
         <div
-          className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-700 ease-out ${
+          className={`absolute inset-0 overflow-hidden pointer-events-none transition-opacity duration-700 ease-out ${
             ready ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div id={playerDivId} className="absolute w-[300%] h-[300%]" />
+          <div
+            id={playerDivId}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] h-[56.25vw] min-w-full min-h-full"
+          />
         </div>
       )}
 

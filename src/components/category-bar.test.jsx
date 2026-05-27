@@ -17,7 +17,8 @@ describe('CategoryBar', () => {
 
     expect(screen.getByText('All')).toBeInTheDocument()
     expect(screen.getByText('Ambient')).toBeInTheDocument()
-    expect(screen.getByText('Wisdom')).toBeInTheDocument()
+    expect(screen.getByText('Classes')).toBeInTheDocument()
+    expect(screen.getByText('Solo Trip')).toBeInTheDocument()
     expect(screen.getByText('Guided')).toBeInTheDocument()
     expect(screen.getByText('Satisfying')).toBeInTheDocument()
     expect(screen.getByText('Film Camera')).toBeInTheDocument()

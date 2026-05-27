@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import videos from './videos.json'
 
-const VALID_CATEGORIES = ['ambient', 'wisdom', 'guided', 'satisfying', 'filmcamera', 'surfing']
+const VALID_CATEGORIES = ['ambient', 'classes', 'guided', 'satisfying', 'filmcamera', 'surfing', 'solotrip']
 const REQUIRED_FIELDS = ['id', 'youtubeId', 'title', 'creator', 'category', 'duration']
 
 describe('videos.json', () => {

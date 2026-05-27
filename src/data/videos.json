@@ -136,83 +136,27 @@
     "duration": 36000
   },
   {
-    "id": "stoic-care-less-01",
-    "youtubeId": "LGXRpbDuDGE",
-    "title": "When Life Hurts, Care Less About It",
-    "creator": "Einzelganger",
-    "category": "wisdom",
-    "duration": 848
-  },
-  {
-    "id": "stoic-exercises-01",
-    "youtubeId": "tDrXwMkHS8U",
-    "title": "How to Stop Caring So Much",
-    "creator": "Einzelganger",
-    "category": "wisdom",
-    "duration": 780
-  },
-  {
     "id": "stoic-intro-01",
     "youtubeId": "o0MzQZ_eFEY",
     "title": "Introduction to Stoicism",
     "creator": "Academy of Ideas",
-    "category": "wisdom",
+    "category": "classes",
     "duration": 600
   },
   {
-    "id": "life-not-journey-01",
-    "youtubeId": "rBpaUICxEhk",
-    "title": "Life is NOT a Journey",
-    "creator": "After Skool",
-    "category": "wisdom",
-    "duration": 240
-  },
-  {
-    "id": "no-purpose-01",
-    "youtubeId": "dx4yW0mjezw",
-    "title": "The Benefit of Living With No Purpose",
-    "creator": "After Skool",
-    "category": "wisdom",
-    "duration": 600
-  },
-  {
-    "id": "stop-thinking-01",
-    "youtubeId": "EVerqpMjYYg",
-    "title": "Alan Watts — Stop Thinking",
-    "creator": "T&H - Inspiration & Motivation",
-    "category": "wisdom",
-    "duration": 1200
-  },
-  {
-    "id": "stop-overthinking-01",
-    "youtubeId": "nBt6eOpVZ_c",
-    "title": "Alan Watts — Stop Overthinking",
-    "creator": "T&H - Inspiration & Motivation",
-    "category": "wisdom",
-    "duration": 1200
-  },
-  {
-    "id": "poetry-sleep-01",
-    "youtubeId": "SFs2qeHPM1Q",
-    "title": "Classic Poetry Reading for Sleep",
-    "creator": "The Cultured Bumpkin",
-    "category": "wisdom",
-    "duration": 3600
-  },
-  {
-    "id": "daily-calm-01",
-    "youtubeId": "ZToicYcHIOU",
-    "title": "Daily Calm — 10 Minute Mindfulness",
-    "creator": "Calm",
-    "category": "wisdom",
-    "duration": 600
+    "id": "marcus-aurelius-meditations-01",
+    "youtubeId": "Auuk1y4DRgk",
+    "title": "Marcus Aurelius' Meditations — The Stoic Ideal",
+    "creator": "Academy of Ideas",
+    "category": "classes",
+    "duration": 660
   },
   {
     "id": "thought-experiment-01",
     "youtubeId": "3DhNjtLivdg",
     "title": "A Thought Experiment That Changes Your Life",
     "creator": "Pursuit of Wonder",
-    "category": "wisdom",
+    "category": "classes",
     "duration": 600
   },
   {
@@ -518,5 +462,477 @@
     "creator": "4K Relaxation Channel",
     "category": "surfing",
     "duration": 3600
+  },
+  {
+    "id": "jazz-cafe-rainy-night-01",
+    "youtubeId": "c0_ejQQcrwI",
+    "title": "Rainy Night Coffee Shop Ambience with Relaxing Jazz Music",
+    "creator": "Coffee Shop Ambience",
+    "category": "ambient",
+    "duration": 28800
+  },
+  {
+    "id": "cozy-cabin-snow-01",
+    "youtubeId": "3PXUO_7Pj5o",
+    "title": "Winter Cozy Cabin in Snowfall with Crackling Fireplace",
+    "creator": "Cozy Ambience",
+    "category": "ambient",
+    "duration": 10800
+  },
+  {
+    "id": "train-rain-night-01",
+    "youtubeId": "XPdw9N1VvfQ",
+    "title": "Rain on Train Window at Night",
+    "creator": "Train Rain Sounds",
+    "category": "ambient",
+    "duration": 7200
+  },
+  {
+    "id": "underwater-deep-ocean-01",
+    "youtubeId": "_dJDFGvkc1Y",
+    "title": "UNDERWATER Ambience — Deep Sea ASMR",
+    "creator": "New Bliss",
+    "category": "ambient",
+    "duration": 36000
+  },
+  {
+    "id": "aurora-borealis-4k-01",
+    "youtubeId": "T75IKSXVXlc",
+    "title": "Aurora Borealis in 4K — Northern Lights Alaska",
+    "creator": "Nature Relaxation Films",
+    "category": "ambient",
+    "duration": 7200
+  },
+  {
+    "id": "zen-garden-rain-01",
+    "youtubeId": "YN6wj5NfOnM",
+    "title": "Rain on Japanese Zen Garden at Night",
+    "creator": "Calmbience",
+    "category": "ambient",
+    "duration": 36000
+  },
+  {
+    "id": "jazz-lofi-cafe-01",
+    "youtubeId": "CBSlu_VMS9U",
+    "title": "Jazz Lofi Mix — Relaxing Music to Chill To",
+    "creator": "Lofi Girl",
+    "category": "ambient",
+    "duration": 10800
+  },
+  {
+    "id": "yoga-nidra-20min-01",
+    "youtubeId": "7H0FKzeuVVs",
+    "title": "Yoga Nidra 20 Minute Guided Meditation",
+    "creator": "Lizzy Hill",
+    "category": "guided",
+    "duration": 1200
+  },
+  {
+    "id": "beach-visualization-01",
+    "youtubeId": "Lg3eosb9Vy0",
+    "title": "Beach Relaxation Guided Visualization",
+    "creator": "The Honest Guys",
+    "category": "guided",
+    "duration": 900
+  },
+  {
+    "id": "walking-meditation-nature-01",
+    "youtubeId": "XUaClN-gTgI",
+    "title": "Guided Walking Meditation — Mindful Walk in Nature",
+    "creator": "Great Meditation",
+    "category": "guided",
+    "duration": 600
+  },
+  {
+    "id": "self-compassion-rain-01",
+    "youtubeId": "wm1t5FyK5Ek",
+    "title": "The RAIN of Self Compassion — Tara Brach",
+    "creator": "Tara Brach",
+    "category": "guided",
+    "duration": 1200
+  },
+  {
+    "id": "morning-meditation-clarity-01",
+    "youtubeId": "OccjH_2ddQc",
+    "title": "10 Minute Morning Meditation for Clarity",
+    "creator": "Goop",
+    "category": "guided",
+    "duration": 600
+  },
+  {
+    "id": "glass-blowing-asmr-01",
+    "youtubeId": "LSf-fgom5To",
+    "title": "Glass Blowing ASMR — No Talking",
+    "creator": "Glass Craft ASMR",
+    "category": "satisfying",
+    "duration": 1200
+  },
+  {
+    "id": "leather-wallet-asmr-01",
+    "youtubeId": "bMoOG_jHbmk",
+    "title": "Making a Leather Bifold Wallet",
+    "creator": "Stock & Barrel Co.",
+    "category": "satisfying",
+    "duration": 1620
+  },
+  {
+    "id": "kinetic-sand-cutting-01",
+    "youtubeId": "etp46Aca_UM",
+    "title": "Satisfying Kinetic Sand Cutting ASMR",
+    "creator": "Sand Tagious",
+    "category": "satisfying",
+    "duration": 3600
+  },
+  {
+    "id": "cake-decorating-asmr-01",
+    "youtubeId": "rw6smB2vSWo",
+    "title": "Satisfying Cake Decorating ASMR — No Talking",
+    "creator": "Happy Cakes Surrey",
+    "category": "satisfying",
+    "duration": 2100
+  },
+  {
+    "id": "blacksmith-knife-01",
+    "youtubeId": "JprTHPKo_6Y",
+    "title": "Blacksmithing — Forging a Knife",
+    "creator": "Torbjorn Ahman",
+    "category": "satisfying",
+    "duration": 960
+  },
+  {
+    "id": "pottery-asmr-01",
+    "youtubeId": "WX-t3_BvMnA",
+    "title": "Satisfying Pottery ASMR — No Talking",
+    "creator": "Florian Gadsby",
+    "category": "satisfying",
+    "duration": 1500
+  },
+  {
+    "id": "linocut-printmaking-01",
+    "youtubeId": "aI3RUPCgPBE",
+    "title": "Relaxing Linocut Printmaking ASMR",
+    "creator": "Boarding All Rows",
+    "category": "satisfying",
+    "duration": 1200
+  },
+  {
+    "id": "embroidery-asmr-01",
+    "youtubeId": "LvJPvsxeOHE",
+    "title": "Hand Embroidery ASMR — Tambour Stitching",
+    "creator": "Tambour Beading",
+    "category": "satisfying",
+    "duration": 3600
+  },
+  {
+    "id": "35mm-tokyo-aesthetic-01",
+    "youtubeId": "ldELxoJAjaY",
+    "title": "Tokyo Aesthetic — 35mm Film",
+    "creator": "Samuel Elkins",
+    "category": "filmcamera",
+    "duration": 600
+  },
+  {
+    "id": "medium-format-mamiya-01",
+    "youtubeId": "vwdfuYsdPZQ",
+    "title": "Mamiya RB67 in the Garden — Slow Film Photography",
+    "creator": "Kyle McDougall",
+    "category": "filmcamera",
+    "duration": 900
+  },
+  {
+    "id": "darkroom-printing-01",
+    "youtubeId": "T2gNLG3nDfU",
+    "title": "Making My First Prints in a Brand New Darkroom",
+    "creator": "Kyle McDougall",
+    "category": "filmcamera",
+    "duration": 1200
+  },
+  {
+    "id": "polaroid-magic-01",
+    "youtubeId": "fNXyvc3va70",
+    "title": "The Magic of Instant Photography — How Polaroid Works",
+    "creator": "Polaroid",
+    "category": "filmcamera",
+    "duration": 300
+  },
+  {
+    "id": "hasselblad-night-01",
+    "youtubeId": "9Fwr45WIgqI",
+    "title": "Night Photography with Hasselblad 500 c/m",
+    "creator": "Willem Verbeeck",
+    "category": "filmcamera",
+    "duration": 780
+  },
+  {
+    "id": "5-days-film-tokyo-01",
+    "youtubeId": "QTEceelb57M",
+    "title": "5 Days of Shooting 35mm Film in Tokyo",
+    "creator": "grainydays",
+    "category": "filmcamera",
+    "duration": 900
+  },
+  {
+    "id": "longboard-noosa-01",
+    "youtubeId": "mTZfDoY8TzA",
+    "title": "Perfect Longboard Surfing Session in Noosa",
+    "creator": "NobodySurf",
+    "category": "surfing",
+    "duration": 480
+  },
+  {
+    "id": "longboard-hawaii-mellow-01",
+    "youtubeId": "L7Ji0MLf8G0",
+    "title": "Mellow Longboard Surfing — North Shore Hawaii",
+    "creator": "Kelia Moniz",
+    "category": "surfing",
+    "duration": 600
+  },
+  {
+    "id": "dawn-patrol-sunrise-01",
+    "youtubeId": "Lf86zOJhrMc",
+    "title": "Surfing at Dawn — The Perfect Sunrise POV",
+    "creator": "Surfing With Noz",
+    "category": "surfing",
+    "duration": 720
+  },
+  {
+    "id": "drone-surf-aerial-01",
+    "youtubeId": "v5j-9DmEEbI",
+    "title": "Golden Hour Surf From Above — Drone",
+    "creator": "Surf Visuals",
+    "category": "surfing",
+    "duration": 300
+  },
+  {
+    "id": "surf-indonesia-raw-01",
+    "youtubeId": "j6jZc_UU3BE",
+    "title": "RAW DAYS — Batukaras, Indonesia",
+    "creator": "NobodySurf",
+    "category": "surfing",
+    "duration": 600
+  },
+  {
+    "id": "surf-mexi-log-fest-01",
+    "youtubeId": "FwLdc9yqJIg",
+    "title": "RAW DAYS — Mexi Log Fest Longboard Surfing",
+    "creator": "NobodySurf",
+    "category": "surfing",
+    "duration": 540
+  },
+  {
+    "id": "rainy-shinjuku-night-01",
+    "youtubeId": "Jzr0wVVQmu4",
+    "title": "Rainy Night Walk in Shinjuku Tokyo — Umbrella Sounds (No Talking) 4K",
+    "creator": "ASMR Walk Japan",
+    "category": "solotrip",
+    "duration": 2400
+  },
+  {
+    "id": "kyoto-morning-temples-01",
+    "youtubeId": "XSaF_sDxLdo",
+    "title": "Kyoto Morning Walk through Temples and Neighborhoods — Japan 4K",
+    "creator": "Japan Walk",
+    "category": "solotrip",
+    "duration": 3600
+  },
+  {
+    "id": "shibuya-afternoon-walk-01",
+    "youtubeId": "aGlGtqGX6Fc",
+    "title": "Shibuya Spring Afternoon Walk — No Talking, City Sounds 4K",
+    "creator": "Tokyo Walk Journal",
+    "category": "solotrip",
+    "duration": 2700
+  },
+  {
+    "id": "paris-sunrise-eiffel-01",
+    "youtubeId": "2-N05fK8--U",
+    "title": "Quiet Paris at Sunrise — Eiffel Tower Morning Walk (No Talking, 4K)",
+    "creator": "Walk With Me",
+    "category": "solotrip",
+    "duration": 1800
+  },
+  {
+    "id": "seoul-rain-gyeongbokgung-01",
+    "youtubeId": "CKcw4jWSFz8",
+    "title": "Rainy Day Walk in Gyeongbokgung Palace — A Peaceful Stroll in Seoul",
+    "creator": "Seoul Walker",
+    "category": "solotrip",
+    "duration": 2400
+  },
+  {
+    "id": "seoul-midnight-rain-01",
+    "youtubeId": "szOnHJ_lxoU",
+    "title": "Midnight Rain Walk in Seoul's Hidden Neighborhood — Rain Ambience ASMR",
+    "creator": "Seoul Night Walk",
+    "category": "solotrip",
+    "duration": 1800
+  },
+  {
+    "id": "nyc-rainy-night-manhattan-01",
+    "youtubeId": "k_VFPY6K68o",
+    "title": "NYC Rainy Night Walk in Manhattan — Rain Sounds & Night City Ambience 4K",
+    "creator": "ASMR Walk NYC",
+    "category": "solotrip",
+    "duration": 3600
+  },
+  {
+    "id": "swiss-train-bern-zurich-01",
+    "youtubeId": "FpNCLplChBQ",
+    "title": "Train Ride Window View 4K (No Music) — Bern to Zurich",
+    "creator": "Swiss Train Views",
+    "category": "solotrip",
+    "duration": 4200
+  },
+  {
+    "id": "swiss-train-zermatt-01",
+    "youtubeId": "1RHOWVH4aHA",
+    "title": "Train Ride in Switzerland — Window View Zermatt 4K ASMR",
+    "creator": "Swiss Scenic Trains",
+    "category": "solotrip",
+    "duration": 3600
+  },
+  {
+    "id": "norway-bergen-oslo-train-01",
+    "youtubeId": "5VZZNcffstY",
+    "title": "Bergen Train Line Norway — Stunning Bergen to Oslo Journey Highlights 4K",
+    "creator": "Norway Train Journey",
+    "category": "solotrip",
+    "duration": 1800
+  },
+  {
+    "id": "solo-camping-rainstorm-01",
+    "youtubeId": "IXLSkSqTa1A",
+    "title": "Solo Camping in my Truck During a Rainstorm — No Talking ASMR",
+    "creator": "Camping Sounds",
+    "category": "solotrip",
+    "duration": 3600
+  },
+  {
+    "id": "hiking-sawtooth-idaho-01",
+    "youtubeId": "h5nBGsfpOqA",
+    "title": "Hiking 70 Miles Alone in Idaho's Sawtooth Wilderness",
+    "creator": "Kraig Adams",
+    "category": "solotrip",
+    "duration": 1800
+  },
+  {
+    "id": "hiking-canadian-rockies-01",
+    "youtubeId": "9V93kix3Ep0",
+    "title": "Hiking 60 Miles Alone Through the Canadian Rockies",
+    "creator": "Kraig Adams",
+    "category": "solotrip",
+    "duration": 1500
+  },
+  {
+    "id": "solo-canoe-yukon-01",
+    "youtubeId": "lz81mkr8KaI",
+    "title": "12-Day Solo Canoe Trip in the Canadian Wilderness — The Movie",
+    "creator": "LATITUDES",
+    "category": "solotrip",
+    "duration": 2700
+  },
+  {
+    "id": "istanbul-walking-ambient-01",
+    "youtubeId": "rD0jWK9AkBg",
+    "title": "Istanbul Walking Tour — 8K City Walk with Real Ambient Sounds",
+    "creator": "Walking OZ",
+    "category": "solotrip",
+    "duration": 3600
+  },
+  {
+    "id": "yale-death-philosophy-01",
+    "youtubeId": "p2J7wSuFRl8",
+    "title": "Philosophy of Death — Lecture 1: Course Introduction",
+    "creator": "YaleCourses",
+    "category": "classes",
+    "duration": 2760
+  },
+  {
+    "id": "sapolsky-human-biology-01",
+    "youtubeId": "NNnIGh9g6fA",
+    "title": "Introduction to Human Behavioral Biology",
+    "creator": "Stanford",
+    "category": "classes",
+    "duration": 3420
+  },
+  {
+    "id": "harvard-justice-sandel-01",
+    "youtubeId": "kBdfcR-8hEY",
+    "title": "Justice — What's The Right Thing To Do?",
+    "creator": "Harvard University",
+    "category": "classes",
+    "duration": 3240
+  },
+  {
+    "id": "yale-political-philosophy-01",
+    "youtubeId": "xhm55mIdSuk",
+    "title": "Introduction to Political Philosophy",
+    "creator": "YaleCourses",
+    "category": "classes",
+    "duration": 3000
+  },
+  {
+    "id": "roderick-masters-suspicion-01",
+    "youtubeId": "4wetwETy4u0",
+    "title": "The Masters of Suspicion — Marx, Nietzsche, Freud",
+    "creator": "Rick Roderick",
+    "category": "classes",
+    "duration": 2880
+  },
+  {
+    "id": "yale-astrophysics-intro-01",
+    "youtubeId": "nzmFc2gjUo4",
+    "title": "Frontiers and Controversies in Astrophysics",
+    "creator": "YaleCourses",
+    "category": "classes",
+    "duration": 2820
+  },
+  {
+    "id": "susskind-cosmology-01",
+    "youtubeId": "P-medYaqVak",
+    "title": "Cosmology Lecture 1 — The Expanding Universe",
+    "creator": "Stanford",
+    "category": "classes",
+    "duration": 5760
+  },
+  {
+    "id": "yale-game-theory-01",
+    "youtubeId": "nM3rTU927io",
+    "title": "Game Theory — Five First Lessons",
+    "creator": "YaleCourses",
+    "category": "classes",
+    "duration": 4500
+  },
+  {
+    "id": "academy-intro-nietzsche-01",
+    "youtubeId": "vzRbCrIWURY",
+    "title": "Introduction to Nietzsche",
+    "creator": "Academy of Ideas",
+    "category": "classes",
+    "duration": 600
+  },
+  {
+    "id": "academy-intro-existentialism-01",
+    "youtubeId": "ilg7PiDD8yY",
+    "title": "Introduction to Existentialism",
+    "creator": "Academy of Ideas",
+    "category": "classes",
+    "duration": 600
+  },
+  {
+    "id": "academy-jung-archetypes-01",
+    "youtubeId": "j0KzUS0b_uc",
+    "title": "Introduction to Carl Jung — Archetypes and the Collective Unconscious",
+    "creator": "Academy of Ideas",
+    "category": "classes",
+    "duration": 660
+  },
+  {
+    "id": "yale-modern-poetry-01",
+    "youtubeId": "aG9el6hOjm8",
+    "title": "Modern Poetry — Introduction",
+    "creator": "YaleCourses",
+    "category": "classes",
+    "duration": 3000
   }
 ]

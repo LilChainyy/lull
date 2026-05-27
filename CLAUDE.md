@@ -48,9 +48,12 @@ npm run preview  # Preview production build locally
 ## Content Categories
 
 - `ambient` — rain, fireplace, ocean, nature
-- `wisdom` — narrated micro-reflections, 30-60s
+- `classes` — educational lectures, philosophy, stoicism, complex concepts with ambient narration
 - `guided` — breathing exercises, gratitude prompts
 - `satisfying` — pottery, calligraphy, slow crafts
+- `filmcamera` — super 8, film photography, analog
+- `surfing` — POV surfing, wave footage, surf films
+- `solotrip` — quiet solo travel vlogs, walking tours, train journeys
 
 ## Project Structure
 
