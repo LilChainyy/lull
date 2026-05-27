@@ -1,3 +1,5 @@
+import posthog from 'posthog-js'
+
 export function trackEvent(name, props) {
   if (typeof window === 'undefined' || !window.plausible) return
   window.plausible(name, { props })
@@ -20,6 +22,7 @@ if (typeof window !== 'undefined') {
     const depth = getSessionDepth()
     if (depth > 0) {
       trackEvent('session_depth', { depth })
+      posthog.capture('session_depth', { depth, videos_viewed: [...viewedVideos] })
     }
   })
 }

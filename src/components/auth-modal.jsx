@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useAuth } from '../hooks/use-auth'
+import { usePostHog } from '@posthog/react'
 
 export function AuthModal({ onClose }) {
   const { signIn, signUp, signInWithGoogle } = useAuth()
@@ -9,6 +10,7 @@ export function AuthModal({ onClose }) {
   const [error, setError] = useState(null)
   const [checkEmail, setCheckEmail] = useState(false)
   const [submitting, setSubmitting] = useState(false)
+  const posthog = usePostHog()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -20,7 +22,9 @@ export function AuthModal({ onClose }) {
       setSubmitting(false)
       if (err) {
         setError(err.message)
+        posthog?.captureException(new Error(err.message), { method: 'email', event_type: 'sign_in_error' })
       } else {
+        posthog?.capture('sign_in', { method: 'email' })
         onClose()
       }
     } else {
@@ -28,7 +32,9 @@ export function AuthModal({ onClose }) {
       setSubmitting(false)
       if (err) {
         setError(err.message)
+        posthog?.captureException(new Error(err.message), { method: 'email', event_type: 'sign_up_error' })
       } else {
+        posthog?.capture('sign_up', { method: 'email' })
         setCheckEmail(true)
       }
     }
@@ -36,6 +42,7 @@ export function AuthModal({ onClose }) {
 
   const handleGoogle = async () => {
     setError(null)
+    posthog?.capture('sign_in_with_google')
     const { error: err } = await signInWithGoogle()
     if (err) setError(err.message)
   }

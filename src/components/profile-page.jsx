@@ -3,11 +3,13 @@ import { useAuth } from '../hooks/use-auth'
 import { useFavorites } from '../hooks/use-favorites'
 import { supabase } from '../utils/supabase'
 import videos from '../data/videos.json'
+import { usePostHog } from '@posthog/react'
 
 export function ProfilePage({ onClose }) {
   const { user, signOut } = useAuth()
   const { favorites } = useFavorites()
   const [profile, setProfile] = useState(null)
+  const posthog = usePostHog()
 
   useEffect(() => {
     if (!supabase || !user) return
@@ -34,6 +36,7 @@ export function ProfilePage({ onClose }) {
   const saved = videos.filter((v) => favorites.has(v.id))
 
   const handleSignOut = async () => {
+    posthog?.capture('sign_out', { favorite_count: favorites.size })
     await signOut()
     onClose()
   }

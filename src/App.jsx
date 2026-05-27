@@ -7,6 +7,7 @@ import { ProfilePage } from './components/profile-page'
 import { useFavorites } from './hooks/use-favorites'
 import { useAuth } from './hooks/use-auth'
 import { trackEvent } from './utils/analytics'
+import { usePostHog } from '@posthog/react'
 
 export function App() {
   const [category, setCategory] = useState('all')
@@ -16,11 +17,13 @@ export function App() {
   const [isMuted, setIsMuted] = useState(true)
   const { favorites, toggleFavorite, isFavorite } = useFavorites()
   const { user } = useAuth()
+  const posthog = usePostHog()
 
   const handleCategorySelect = useCallback((key) => {
     trackEvent('category_switch', { category: key })
+    posthog?.capture('category_switch', { category: key })
     setCategory(key)
-  }, [])
+  }, [posthog])
 
   const handleToggleMute = useCallback(() => {
     setIsMuted((prev) => !prev)
@@ -35,10 +38,17 @@ export function App() {
     })
   }
 
+  const handleOpenFavorites = useCallback(() => {
+    posthog?.capture('favorites_opened', { favorite_count: favorites.size })
+    setShowFavorites(true)
+  }, [posthog, favorites.size])
+
   const handleOpenProfile = () => {
     if (user) {
+      posthog?.capture('profile_opened')
       setShowProfile(true)
     } else {
+      posthog?.capture('auth_modal_opened')
       setShowAuth(true)
     }
   }
@@ -48,7 +58,7 @@ export function App() {
       <CategoryBar
         selected={category}
         onSelect={handleCategorySelect}
-        onOpenFavorites={() => setShowFavorites(true)}
+        onOpenFavorites={handleOpenFavorites}
         favoriteCount={favorites.size}
         onOpenProfile={handleOpenProfile}
         user={user}

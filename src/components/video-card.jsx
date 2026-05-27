@@ -2,6 +2,7 @@ import { useRef, useState, useCallback, useEffect } from 'react'
 import { useOnScreen } from '../hooks/use-on-screen'
 import { useYouTubePlayer } from '../hooks/use-youtube-player'
 import { trackEvent, trackVideoView } from '../utils/analytics'
+import { usePostHog } from '@posthog/react'
 
 const CATEGORY_LABELS = {
   ambient: 'Ambient',
@@ -24,6 +25,7 @@ export function VideoCard({ video, isFavorite, onToggleFavorite, isFirst, isMute
   const [showHint, setShowHint] = useState(
     () => isFirst && !localStorage.getItem(UNMUTE_HINT_KEY),
   )
+  const posthog = usePostHog()
 
   const thumbnailUrl = `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`
   const viewTracked = useRef(false)
@@ -36,14 +38,16 @@ export function VideoCard({ video, isFavorite, onToggleFavorite, isFirst, isMute
       viewTracked.current = true
       trackVideoView(video.id)
       trackEvent('video_view', { video: video.id, category: video.category })
+      posthog?.capture('video_view', { video_id: video.id, category: video.category, title: video.title })
     }, 2000)
 
     return () => clearTimeout(timer)
-  }, [isVisible, video.id, video.category])
+  }, [isVisible, video.id, video.category, video.title, posthog])
 
   const handleToggleMute = useCallback(() => {
     if (isMuted) {
       trackEvent('unmute', { video: video.id })
+      posthog?.capture('unmute', { video_id: video.id, category: video.category })
     }
     onToggleMute()
 
@@ -51,14 +55,16 @@ export function VideoCard({ video, isFavorite, onToggleFavorite, isFirst, isMute
       setShowHint(false)
       localStorage.setItem(UNMUTE_HINT_KEY, '1')
     }
-  }, [onToggleMute, showHint, isMuted, video.id])
+  }, [onToggleMute, showHint, isMuted, video.id, video.category, posthog])
 
   const handleFavorite = useCallback(() => {
-    trackEvent('favorite_toggle', { video: video.id, action: isFavorite ? 'remove' : 'add' })
+    const action = isFavorite ? 'remove' : 'add'
+    trackEvent('favorite_toggle', { video: video.id, action })
+    posthog?.capture('favorite_toggle', { video_id: video.id, action, category: video.category })
     onToggleFavorite(video.id)
     setHeartPop(true)
     setTimeout(() => setHeartPop(false), 300)
-  }, [video.id, onToggleFavorite, isFavorite])
+  }, [video.id, video.category, onToggleFavorite, isFavorite, posthog])
 
   return (
     <section
